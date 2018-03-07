@@ -1,6 +1,6 @@
 var path = require('path');
 const { generator } = require('oda-gen-graphql');
-const schema = require('<put your !!!schema location here!!!>').default;
+const schema = require('../../api-new-ui-gen/dist/schema').default;
 
 generator({
   pack: schema,

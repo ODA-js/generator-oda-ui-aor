@@ -59,6 +59,7 @@ module.exports = class extends Generator {
       hash: this.props.hash
     });
     this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
+    this.fs.copy(this.templatePath('env'), this.destinationPath('.env'));
   }
 
   install() {
